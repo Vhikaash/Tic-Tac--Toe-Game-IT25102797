@@ -1,13 +1,10 @@
-#ifndef GAME_H
-#define GAME_H
-
-#define MIN_SIZE 3
-#define MAX_SIZE 10
+#ifndef GAMEUC_H
+#define GAMEUC_H
 
 void initBoard(int size);
 void displayBoard(int size);
-void getPlayerMove(int player, int size);
 int  isValidMove(int row, int col, int size);
+void getPlayerMove(int player, int size);
 int  checkWin(int size);
 int  checkDraw(int size);
 void logMove(int player, int size);
